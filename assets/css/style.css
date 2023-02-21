@@ -51,11 +51,10 @@ header {
   display: flex;
 }
 
-div {
-  display: flex;
+.project-card {
   justify-self: normal;
   margin: 40px 40px;
-
+  flex-basis: 50vh;
 }
 
 h2 {
@@ -68,11 +67,13 @@ a {
 }
 
 section {
+  display: flex;
   color: #FF8BFF;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 20px;
   margin-left: 20px;
   justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -81,6 +82,11 @@ h1 {
 
 h2 {
   color: #FF8BFF
+}
+
+img {
+  width: 300px;
+  height: 300px;
 }
 
 
