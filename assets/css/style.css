@@ -7,32 +7,29 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
-}
+
 
 body {
-  font-size: 22px;
-  color: #FF8BFF;
-  background-color: #193718;
-  --fg: 255, 139, 255;
-  --bg: 25, 55, 24;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  font-size: 22px;
+  color: #FF8BFF;
+  background-color: #193718;
+  min-height: 100%;
 }
 
 nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'Courier New', Courier, monospace;
   list-style-type: none;
   margin: 70px;
   padding: 820;
   font-size: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+ 
 }
 
 nav li {
@@ -42,19 +39,21 @@ nav li {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
   color: #FF8BFF;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 20px;
   margin-left: 20px;
-  justify-content: center;
-  align-self: flex-start;
-  display: flex;
+
 }
 
-.about-blanca {
-  justify-self: normal;
-  margin: 40px 40px;
-  flex-basis: 50vh;
+img {
+  width: 15%;
+  height: 270px;
+  margin-left: 22%;
+  margin-top: 7%;
 }
 
 article {
@@ -66,12 +65,19 @@ article {
   padding: 5px;
   border: solid 1px  #FF8BFF;
   position: relative;
+  width: 15%;
+  margin-left: 5%;
+  margin-top: -5%;
 }
 
 .project-card {
-  justify-self: normal;
-  margin: 40px 40px;
+  justify-self: center;
+  margin-top: 10%;
+  margin-left: 40%;
   flex-basis: 50vh;
+  height: 260px;
+  width: 300%;
+  text-align: center;
 }
 
 h1, h2 {
@@ -85,6 +91,7 @@ h2 {
   margin: 10px;
   padding: 5px;
   position: relative;
+  margin-right: 92%;
 }
 
 a {
@@ -93,18 +100,16 @@ a {
 
 section {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: #FF8BFF;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 20px;
   margin-left: 20px;
-  justify-content: center;
-  flex-direction: column;
+  
 }
 
-img {
-  width: 300px;
-  height: 300px;
-}
+
 
 footer {
   display: flex;
