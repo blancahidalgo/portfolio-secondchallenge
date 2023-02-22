@@ -126,6 +126,15 @@ footer p {
   padding: 0 1rem;
 }
 
+button {
+display:flex;
+justify-content: space-between;
+background-color: #193718;
+color: #FF8BFF;
+border-radius: 5px;
+font-size: 15px;
+}
+
 /* MEDIA QUERIES*/
 
 @media screen and (min-width: 576px) {
