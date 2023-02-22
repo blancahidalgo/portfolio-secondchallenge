@@ -140,22 +140,37 @@ border-radius: 5px;
 font-size: 15px;
 }
 
-/* MEDIA QUERIES*/
+/* MEDIA QUERIES*/   /* do we need to go element per element?*/
+/* FOR IPHONE*/
 
+@media screen and (min-width: 375px) {
+  display: flex;
+}
+
+@media screen and (max-width: 667px) {
+  display: flex;
+}
+
+/* FOR IPAD*/
+@media screen and (min-width: 820px) {
+  display: flex;
+}
+@media screen and (max-width: 118px) {
+  display: flex;
+}
+
+/*FOR WEB???*/
 @media screen and (min-width: 576px) {
 nav ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 }
-
 @media screen and (min-width: 478) {
   footer {
     /* background: #193718; */
     flex-direction: row;
     justify-content: space-between;
   }
-
 }
