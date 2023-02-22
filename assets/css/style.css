@@ -51,15 +51,40 @@ header {
   display: flex;
 }
 
+.about-blanca {
+  justify-self: normal;
+  margin: 40px 40px;
+  flex-basis: 50vh;
+}
+
+article {
+  display: flex;
+  justify-content: flex end;
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 10px;
+  padding: 5px;
+  border: solid 1px  #FF8BFF;
+  position: relative;
+}
+
 .project-card {
   justify-self: normal;
   margin: 40px 40px;
   flex-basis: 50vh;
 }
 
+h1, h2 {
+  color: #FF8BFF
+}
+
 h2 {
   font-size: 18px;
   margin: 10px;
+  border: solid 1px  #FF8BFF;
+  margin: 10px;
+  padding: 5px;
+  position: relative;
 }
 
 a {
@@ -76,32 +101,23 @@ section {
   flex-direction: column;
 }
 
-h1 {
-  color: #FF8BFF
-}
-
-h2 {
-  color: #FF8BFF
-}
-
 img {
   width: 300px;
   height: 300px;
 }
 
-
 footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: #FF8BFF;
   font-size: 18px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 20px;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: solid 2px white;
+  margin: 25px;
+  border: solid 1px #FF8BFF;
   position: relative;
-  bottom: 10px;
+  bottom: 20px;
   /* flex-shrink: 0; */
   /* height: 120% */
 }
@@ -121,7 +137,7 @@ nav ul {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 478) {
   footer {
     /* background: #193718; */
     flex-direction: row;
