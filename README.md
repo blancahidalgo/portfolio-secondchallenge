@@ -1,4 +1,4 @@
-The link for my deployed app can be viewed here: 
+The link for my deployed app can be viewed here: https://blancahidalgo.github.io/portfolio-secondchallenge/
 
 I've created a first draft of what will be my professional portfolio gathering my projects to showcase to potential future employees. 
 
@@ -14,3 +14,4 @@ When you travel to my first project's image placeholder, you can see it's bigger
 
 You will be able to see that when you resize my web page to view it from other devices other than just a computer screen, the elements are repositioned as intended via the media queries. The site is responsive thanks to that. 
 
+![alt text](assets/images/First-glance-homework.png)
