@@ -6,78 +6,106 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-
-
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  font-size: 22px;
-  color: #FF8BFF;
-  background-color: #193718;
-  min-height: 100%;
+background-color: #193718;
 }
 
+/* This styles my navigation element 'ul' being the parent container and 'li' below being the child elements */
 nav ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   font-family: 'Courier New', Courier, monospace;
   list-style-type: none;
-  margin: 70px;
-  padding: 820;
+  margin: 10px;
   font-size: 22px;
- 
 }
 
 nav li {
   display: inline-block;
   margin: 1rem 1.25rem;
   padding: 0 0px;
+  margin-bottom: 0;
 }
 
+/* This just defines my main site header */
 header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-self: flex-start;
   color: #FF8BFF;
+  font-size: 26px;;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 20px;
   margin-left: 20px;
 
 }
 
+/* about section styling */
+.about-section {
+display: flex;
+width: 40%;
+flex-direction:row;
+margin: 0 auto;
+border: 1px solid #FF8BFF;
+@media (max-width: 1100px) {
+  flex-direction: column;
+}
+}
+
+.about-blanca {
+display: flex;
+width: 50%;
+@media (max-width: 1100px) {
+  width: 100%;
+  flex-direction: column;
+}
+}
+
+.about-blanca a img {
+width: 80%;
+margin: 0 auto;
+}
+
+.about-blanca a {
+margin: 0 auto;
+display: block;
+width: 300%;
+}
+
+.info-blanca {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 50px;
+width: 50%;
+@media (max-width: 1100px) {
+  width: 100%;
+}
+}
+
+/* 
 img {
   width: 15%;
   height: 270px;
   margin-left: 22%;
   margin-top: 7%;
-}
+} */
 
-article {
-  display: flex;
-  justify-content: flex end;
-  font-size: 18px;
-  font-family: 'Courier New', Courier, monospace;
-  margin: 10px;
-  padding: 5px;
-  border: solid 1px  #FF8BFF;
-  position: relative;
-  width: 15%;
-  margin-left: 5%;
-  margin-top: -5%;
-}
-
-.project-card {
-  justify-self: center;
-  margin-top: 10%;
-  margin-left: 40%;
-  flex-basis: 50vh;
-  height: 260px;
-  width: 300%;
+.project-card-1 {
   text-align: center;
+}
+.project-card-1 a img {
+width: 30%;  
+border: solid 1px  #FF8BFF;
+}
+
+.project-card-2 {
+  text-align: center;
+}
+.project-card-2 a img {
+width: 5%;  
+border: solid 1px #FF8BFF;
 }
 
 h1, h2 {
@@ -86,12 +114,10 @@ h1, h2 {
 
 h2 {
   font-size: 18px;
+  border-top: solid 1px  #FF8BFF;
   margin: 10px;
-  border: solid 1px  #FF8BFF;
-  margin: 10px;
-  padding: 5px;
+  padding-top: 25px;
   position: relative;
-  margin-right: 92%;
 }
 
 a {
@@ -110,7 +136,6 @@ section {
 }
 
 
-
 footer {
   display: flex;
   flex-direction: row;
@@ -119,12 +144,9 @@ footer {
   color: #FF8BFF;
   font-size: 18px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 25px;
+  margin: 80px;
   border: solid 1px #FF8BFF;
   position: relative;
-  bottom: 20px;
-  /* flex-shrink: 0; */
-  /* height: 120% */
 }
 
 footer p {
@@ -140,36 +162,25 @@ border-radius: 5px;
 font-size: 15px;
 }
 
-/* MEDIA QUERIES*/   /* do we need to go element per element?*/
-/* FOR IPHONE*/
+/* MEDIA QUERIES*/   
 
-@media screen and (min-width: 375px) {
-  display: flex;
-}
-
-@media screen and (max-width: 667px) {
-  display: flex;
-}
-
-/* FOR IPAD*/
-@media screen and (min-width: 820px) {
-  display: flex;
-}
-@media screen and (max-width: 118px) {
-  display: flex;
-}
-
-/*FOR WEB???*/
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 950px) {
 nav ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 }
-@media screen and (min-width: 478) {
+@media screen and (min-width: 950px) {
+  section {
+    background: #193718;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 950px) {
   footer {
-    /* background: #193718; */
+    background: #193718;
     flex-direction: row;
     justify-content: space-between;
   }
